@@ -10,7 +10,16 @@
 </head>
 
 <body>
-<div class="topnav-container">
+    <div class="verification-container">
+        @if (Route::has('login'))
+        <div>
+            @auth
+                <a href="{{ url('/home') }}">Página Inicial</a>
+        </div>
+    </div>
+
+
+    <div class="topnav-container">
         <!--<img src="./view/img/logosite.png">-->
         <div class="rightbuttons-container">
             <div class="topnavbuttons-container">
