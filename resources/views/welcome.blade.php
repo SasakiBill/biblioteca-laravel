@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ str_replace('_','-', app()->getLocale())}}">
 
 <head>
-    <title>Biblioteca Online - Página Inicial</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width", initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token()}}">
+    <title>{{ config ('app.name', 'Biblioteca Online')}}</title>
     <link href="/css/main.css" rel="stylesheet" type="text/css">
 </head>
 
