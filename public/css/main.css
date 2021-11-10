@@ -76,9 +76,14 @@
         transition: 0.5s;
     }
 
+    .verification-container{
+        
+        margin-left: 80%;
+    }
+
     .caixainicial-container{
         top: 30px;
-        position: relative;
+        
         float: left;
     }
 
