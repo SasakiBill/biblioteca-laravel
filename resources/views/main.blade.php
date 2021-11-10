@@ -75,7 +75,7 @@
     <main>
         @yield('content')
 
-        <div class="caixainicial-container">
+        <!--<div class="caixainicial-container">
             <p>Sistema simples para visualização <br> e empréstimos de livros. <br>
                 Realize o login para acessar <br>todos os recursos do sistema web. <br>
                 Caso ainda não tenha uma conta, sinta-se <br> a vontade para realizar o cadastro <br>
@@ -86,7 +86,7 @@
         </div>
         <!-- <div class="botaoregister-container">
                 <button type="submit" name="botaoregister">Criar Conta</button>
-            </div>-->
+            </div>
         <div class="modalacesso-container">
             <div id="openModalConta" class="modalDialog">
                 <a href="#close" title="Close" class="close">X</a>
@@ -136,7 +136,7 @@
                     </form>
                 </div>
             </div>
-        </div>
+        </div>-->
     </main>
     </body>
     

@@ -84,13 +84,12 @@
         margin-left: 80%;
     }
 
-    .botoesverif-container{
-        margin-top: -5%;
+    .botoesverif-container a{
+        margin-top: 10px;
     }
 
     .caixainicial-container{
         top: 30px;
-        
         float: left;
     }
 
