@@ -55,7 +55,7 @@
             <div class="verification-container">
                 <div>   
                     @if (Route::has('login'))
-                    <div>
+                    <div class="botoesverif-container">
                         @auth
                             <a href="{{ url('/home') }}">Home</a>
                         @else
