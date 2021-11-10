@@ -9,24 +9,6 @@
     <link href="/css/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div class="verification-container">
-        <div>   
-            @if (Route::has('login'))
-            <div>
-                @auth
-                    <a href="{{ url('/home') }}">Home</a>
-                @else
-                    <a href="{{ route('login') }}">Login</a>
-
-                    @if (Route::has('register'))
-                        <a href="{{ route('register') }}">Register</a>
-                    @endif
-                @endif
-            </div>
-        @endif
-        </div>
-    </div>
-
     <div class="topnav-container">
         <!--<img src="./view/img/logosite.png">-->
         <div class="rightbuttons-container">
@@ -38,12 +20,21 @@
                     <a href="/sobre">Sobre</a>
                 </ul>
             </div>
-            <div class="login-container">
-                <div class="botaologin-container">
-                    <a href="#openModalConta">Entrar</a>
-                </div>
-                <div class="modalacesso-container">
-                    <a href="#openModal">Criar Conta</a>
+            <div class="verification-container">
+                <div>   
+                    @if (Route::has('login'))
+                    <div>
+                        @auth
+                            <a href="{{ url('/home') }}">Home</a>
+                        @else
+                            <a href="{{ route('login') }}">Login</a>
+        
+                            @if (Route::has('register'))
+                                <a href="{{ route('register') }}">Register</a>
+                            @endif
+                        @endif
+                    </div>
+                @endif
                 </div>
             </div>
         </div>
@@ -61,17 +52,25 @@
                     <a href="/sobre">Sobre</a>
                 </ul>
             </div>
-            <div class="login-container">
-                <div class="botaologin-container">
-                    <a href="#openModalConta">Entrar</a>
-                </div>
-                <div class="modalacesso-container">
-                    <a href="#openModal">Criar Conta</a>
+            <div class="verification-container">
+                <div>   
+                    @if (Route::has('login'))
+                    <div>
+                        @auth
+                            <a href="{{ url('/home') }}">Home</a>
+                        @else
+                            <a href="{{ route('login') }}">Login</a>
+        
+                            @if (Route::has('register'))
+                                <a href="{{ route('register') }}">Register</a>
+                            @endif
+                        @endif
+                    </div>
+                @endif
                 </div>
             </div>
         </div>
     </div>
-    
 
     <main>
         @yield('content')
@@ -138,9 +137,10 @@
                 </div>
             </div>
         </div>
+    </main>
     </body>
     
-    </main>
+   
 
 
     
