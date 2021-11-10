@@ -8,40 +8,46 @@
             @csrf
 
             <label>Nome: </label>
-                <input name="name" class="form-control @error('name') is-invalid @enderror" type="text" placeholder="digite seu nome" value="{{ old('name') }}">
+                <input id="name" name="name" class="form-control @error('name') is-invalid @enderror" type="text" placeholder="digite seu nome" value="{{ old('name') }}">
                 @error('name')
                     <span class="invalid-feedback" role="alert">
                         {{ $message }}
                     </span>
                 @enderror
+                <br>
             <label>E-mail:</label>
-                <input name="email" lass="form-control @error('email') is-invalid @enderror" type="email" placeholder="email@email" value="{{ old('email') }}">
+                <input id="email" name="email" class="form-control @error('email') is-invalid @enderror" type="email" placeholder="email@email" value="{{ old('email') }}">
                 @error('email')
                     <span class="invalid-feedback" role="alert">
                         {{ $message }}
                     </span>
                 @enderror
+                <br>
             <label>Telefone Residêncial:</label>
-                <input name="telephone" lass="form-control @error('telephone') is-invalid @enderror" type="tel" placeholder="(XX) XXXXX-XXXX" value="{{ old('telephone') }}">
-                @error('telephone')
+                <input id="phone" name="phone" class="form-control @error('phone') is-invalid @enderror" type="text" placeholder="(XX) XXXXX-XXXX" value="{{ old('telephone') }}">
+                @error('phone')
                     <span class="invalid-feedback" role="alert">
                         {{ $message }}
                     </span>
                 @enderror
+                <br>
             <label>Senha:</label>
-                <input name="password" lass="form-control @error('password') is-invalid @enderror" type="password" placeholder="digite sua senha" value="{{ old('password') }}">
+                <input id="password" name="password" class="form-control @error('password') is-invalid @enderror" type="password" placeholder="digite sua senha">
                 @error('password')
                     <span class="invalid-feedback" role="alert">
                         {{ $message }}
                     </span>
                 @enderror
+                <br>
             <label>Confirmar Senha:</label>
-                <input name="password_confirmation" lass="form-control @error('password_confirmation') is-invalid @enderror" type="password" placeholder="confirme sua senha" id="senhacc" value="{{ old('password_confirmation') }}">
+                <input id="password" name="password_confirmation" class="form-control @error('password_confirmation') is-invalid @enderror" type="password" placeholder="confirme sua senha" id="senhacc">
                 @error('password_confirmation')
                     <span class="invalid-feedback" role="alert">
                         {{ $message }}
                     </span>
                 @enderror
+                <br>
+
             <input type="submit" value="Cadastrar!">
         </form>
     </div>

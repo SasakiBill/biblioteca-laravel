@@ -4,6 +4,11 @@
         overflow-x: hidden;
     }
 
+    span{
+        color: red;
+        
+    }
+
     .topnavadmin-container{
         display: none;
     }
