@@ -1,6 +1,6 @@
-@extends('main')
+@extends('layouts.topnavuser')
 
-@section('content')
+<section class="loginsection-container">
     <h1>Log In</h1>
 
     <div class="formulario">
@@ -27,4 +27,4 @@
             <input type="submit" value="Entrar!">
         </form>
     </div>
-@endsection
+</section>

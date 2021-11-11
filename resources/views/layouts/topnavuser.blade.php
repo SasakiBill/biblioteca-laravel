@@ -12,18 +12,18 @@
     <div class="topnav-container">
         <!--<img src="./view/img/logosite.png">-->
         <div class="rightbuttons-container">
-            <div class="topnavbuttons-container">
+            <nav>
                 <ul>
                     <a href="/">Página Inicial</a>
                     <a href="/library">Biblioteca</a>
                     <a href="/loans">Meus Empréstimos</a>
                     <a href="/about">Sobre</a>
                 </ul>
-            </div>
-            <div class="verification-container">
+            <
+            <div>
                 <div>   
                     @if (Route::has('login'))
-                    <div>
+                    <div  class="verification-container">
                         @auth
                             <a href="{{ url('/home') }}">Home</a>
                             <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
@@ -50,7 +50,7 @@
     <div class="topnavadmin-container">
         <!--<img src="./view/img/logosite.png">-->
         <div class="rightbuttons-container">
-            <div class="topnavbuttons-container">
+            <nav>
                 <ul>
                     <a href="/">Página Inicial</a>
                     <a href="/biblioteca">Biblioteca</a>
@@ -58,7 +58,7 @@
                     <a href="/gerencialivro">Gerenciar livros</a>
                     <a href="/sobre">Sobre</a>
                 </ul>
-            </div>
+            <nav>
             <div class="verification-container">
                 <div>   
                     @if (Route::has('login'))
