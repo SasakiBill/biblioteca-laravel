@@ -6,7 +6,7 @@
     <div class="formulario">
         <form method="POST" action="{{ route('login') }}">
             @csrf
-            <label>E-mail:</label>
+            <label for="email" class="form-label">E-mail:</label>
                 <input name="email" class="form-control @error('email') is-invalid @enderror" type="email" placeholder="email@email" value="{{ old('email') }}">
                 @error('email')
                     <span class="invalid-feedback" role="alert">
@@ -14,7 +14,7 @@
                     </span>
                 @enderror
                 <br>
-            <label>Senha:</label>
+            <label for="password" class="form-label">Senha:</label>
                 <input name="password" class="form-control @error('password') is-invalid @enderror" type="password" placeholder="digite sua senha" value="{{ old('password') }}">
                 @error('password')
                     <span class="invalid-feedback" role="alert">
