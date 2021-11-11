@@ -13,10 +13,9 @@
             <div class="topnavbuttons-container">
                 <ul>
                     <a href="/">Página Inicial</a>
-                    <a href="/biblioteca">Biblioteca</a>
-                    <a href="/emprestimos">Meus Empréstimos</a>
-                    <a href="/gerencialivro">Gerenciar Livros</a>
-                    <a href="/sobre">Sobre</a>
+                    <a href="/library">Biblioteca</a>
+                    <a href="/loans">Meus Empréstimos</a>
+                    <a href="/about">Sobre</a>
                 </ul>
             </div>
 

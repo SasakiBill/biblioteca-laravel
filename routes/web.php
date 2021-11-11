@@ -17,19 +17,19 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/biblioteca', function(){
-    return view('biblioteca');
+Route::get('/library', function(){
+    return view('library');
 });
 
-Route::get('/emprestimos', function(){
-    return view('emprestimos');
+Route::get('/loans', function(){
+    return view('loans');
 });
 
-Route::get('/sobre', function(){
-    return view('sobre');
+Route::get('/about', function(){
+    return view('about');
 });
 
-Route::get('/gerencialivro', function(){
-    return view('gerencialivro');
+Route::get('/book-management', function(){
+    return view('book-management');
 });
 
