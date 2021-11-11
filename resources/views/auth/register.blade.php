@@ -1,7 +1,8 @@
 @extends('layouts.topnavuser')
 
 <section class="registersection-container">
-    <h1>Register</h1>
+    <br><br>
+    <h1>Cadastre-se!</h1>
 
     <div class="formulario">
         <form method="POST" action="{{ route('register') }}">

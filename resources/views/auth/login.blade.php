@@ -1,7 +1,8 @@
 @extends('layouts.topnavuser')
 
 <section class="loginsection-container">
-    <h1>Log In</h1>
+    <br><br>
+    <h1>Acesse sua conta!</h1>
 
     <div class="formulario">
         <form method="POST" action="{{ route('login') }}">
