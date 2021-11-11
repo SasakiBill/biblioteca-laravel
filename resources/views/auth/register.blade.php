@@ -1,8 +1,10 @@
 @extends('main')
-$request->validate([
+<script>
+    
+    $request->validate([
     'password' => 'required|confirmed|min:6'
 ]);
-
+</script>
 @section('content')
     <h1>Register</h1>
 
@@ -27,7 +29,7 @@ $request->validate([
                 @enderror
                 <br>
             <label for="phone" class="form-label">Telefone Residêncial:</label>
-                <input id="phone" name="phone" class="form-control @error('phone') is-invalid @enderror" type="text" placeholder="(XX) XXXXX-XXXX" value="{{ old('telephone') }}">
+                <input id="phone" name="phone" class="form-control @error('phone') is-invalid @enderror" type="tel" placeholder="(XX) XXXXX-XXXX" value="{{ old('telephone') }}">
                 @error('phone')
                     <span class="invalid-feedback" role="alert">
                         {{ $message }}
