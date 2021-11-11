@@ -1,5 +1,13 @@
-@extends('main')
+@extends('layouts.topnavuser')
 
-@section('content')
-    <h1>Bublio</h1>
-@endsection
+<section class="section-init">
+<div class="caixainicial-container">
+    <p>Sistema simples para visualização <br> e empréstimos de livros. <br>
+        Realize o login para acessar <br>todos os recursos do sistema web. <br>
+        Caso ainda não tenha uma conta, sinta-se <br> a vontade para realizar o cadastro <br>
+        e utilizar todo o conteúdo do site.</p>
+</div>
+<div class="imageminicial-container">
+    <img src="/img/bib.png" alt="biblogo">
+</div>
+</section>

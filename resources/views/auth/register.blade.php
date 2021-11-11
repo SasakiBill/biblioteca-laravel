@@ -1,11 +1,6 @@
-@extends('main')
-<script>
-    
-    $request->validate([
-    'password' => 'required|confirmed|min:6'
-]);
-</script>
-@section('content')
+@extends('layouts.topnavuser')
+
+<section class="registersection-container">
     <h1>Register</h1>
 
     <div class="formulario">
@@ -56,4 +51,4 @@
             <input type="submit" value="Cadastrar!">
         </form>
     </div>
-@endsection
+</section>
