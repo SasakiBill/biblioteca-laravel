@@ -35,8 +35,8 @@ class ComposerStaticInit97d2be3097feab22c9aa0041ee43a909
         '9cdd7b9056abc3081735233ba9dd9c7f' => __DIR__ . '/..' . '/facade/flare-client-php/src/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
-        'ed962a97bd972bc82007176b647d4e36' => __DIR__ . '/..' . '/facade/ignition/src/helpers.php',
         '4a1f389d6ce373bda9e57857d3b61c84' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/helpers.php',
+        'ed962a97bd972bc82007176b647d4e36' => __DIR__ . '/..' . '/facade/ignition/src/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -55,7 +55,6 @@ class ComposerStaticInit97d2be3097feab22c9aa0041ee43a909
         ),
         'T' => 
         array (
-            'Traitor\\' => 8,
             'TijsVerkoyen\\CssToInlineStyles\\' => 31,
             'Tests\\' => 6,
         ),
@@ -133,7 +132,7 @@ class ComposerStaticInit97d2be3097feab22c9aa0041ee43a909
             'Laravel\\Sanctum\\' => 16,
             'Laravel\\Sail\\' => 13,
             'Laravel\\Fortify\\' => 16,
-            'Laratrust\\' => 10,
+            'LaravelLegends\\PtBrValidator\\' => 29,
         ),
         'I' => 
         array (
@@ -208,10 +207,6 @@ class ComposerStaticInit97d2be3097feab22c9aa0041ee43a909
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
-        ),
-        'Traitor\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/kkszymanowski/traitor/src',
         ),
         'TijsVerkoyen\\CssToInlineStyles\\' => 
         array (
@@ -438,9 +433,9 @@ class ComposerStaticInit97d2be3097feab22c9aa0041ee43a909
         array (
             0 => __DIR__ . '/..' . '/laravel/fortify/src',
         ),
-        'Laratrust\\' => 
+        'LaravelLegends\\PtBrValidator\\' => 
         array (
-            0 => __DIR__ . '/..' . '/santigarcor/laratrust/src',
+            0 => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator',
         ),
         'Illuminate\\Support\\' => 
         array (
@@ -2864,49 +2859,25 @@ class ComposerStaticInit97d2be3097feab22c9aa0041ee43a909
         'Illuminate\\View\\ViewName' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewName.php',
         'Illuminate\\View\\ViewServiceProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewServiceProvider.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
-        'Laratrust\\Checkers\\LaratrustCheckerManager' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Checkers/LaratrustCheckerManager.php',
-        'Laratrust\\Checkers\\Role\\LaratrustRoleChecker' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Checkers/Role/LaratrustRoleChecker.php',
-        'Laratrust\\Checkers\\Role\\LaratrustRoleDefaultChecker' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Checkers/Role/LaratrustRoleDefaultChecker.php',
-        'Laratrust\\Checkers\\Role\\LaratrustRoleQueryChecker' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Checkers/Role/LaratrustRoleQueryChecker.php',
-        'Laratrust\\Checkers\\User\\LaratrustUserChecker' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Checkers/User/LaratrustUserChecker.php',
-        'Laratrust\\Checkers\\User\\LaratrustUserDefaultChecker' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Checkers/User/LaratrustUserDefaultChecker.php',
-        'Laratrust\\Checkers\\User\\LaratrustUserQueryChecker' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Checkers/User/LaratrustUserQueryChecker.php',
-        'Laratrust\\Console\\AddLaratrustUserTraitUseCommand' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Console/AddLaratrustUserTraitUseCommand.php',
-        'Laratrust\\Console\\MakePermissionCommand' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Console/MakePermissionCommand.php',
-        'Laratrust\\Console\\MakeRoleCommand' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Console/MakeRoleCommand.php',
-        'Laratrust\\Console\\MakeSeederCommand' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Console/MakeSeederCommand.php',
-        'Laratrust\\Console\\MakeTeamCommand' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Console/MakeTeamCommand.php',
-        'Laratrust\\Console\\MigrationCommand' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Console/MigrationCommand.php',
-        'Laratrust\\Console\\SetupCommand' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Console/SetupCommand.php',
-        'Laratrust\\Console\\SetupTeamsCommand' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Console/SetupTeamsCommand.php',
-        'Laratrust\\Console\\UpgradeCommand' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Console/UpgradeCommand.php',
-        'Laratrust\\Contracts\\LaratrustPermissionInterface' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Contracts/LaratrustPermissionInterface.php',
-        'Laratrust\\Contracts\\LaratrustRoleInterface' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Contracts/LaratrustRoleInterface.php',
-        'Laratrust\\Contracts\\LaratrustTeamInterface' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Contracts/LaratrustTeamInterface.php',
-        'Laratrust\\Contracts\\LaratrustUserInterface' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Contracts/LaratrustUserInterface.php',
-        'Laratrust\\Contracts\\Ownable' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Contracts/Ownable.php',
-        'Laratrust\\Helper' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Helper.php',
-        'Laratrust\\Http\\Controllers\\PermissionsController' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Http/Controllers/PermissionsController.php',
-        'Laratrust\\Http\\Controllers\\RolesAssignmentController' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Http/Controllers/RolesAssignmentController.php',
-        'Laratrust\\Http\\Controllers\\RolesController' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Http/Controllers/RolesController.php',
-        'Laratrust\\Laratrust' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Laratrust.php',
-        'Laratrust\\LaratrustFacade' => __DIR__ . '/..' . '/santigarcor/laratrust/src/LaratrustFacade.php',
-        'Laratrust\\LaratrustRegistersBladeDirectives' => __DIR__ . '/..' . '/santigarcor/laratrust/src/LaratrustRegistersBladeDirectives.php',
-        'Laratrust\\LaratrustServiceProvider' => __DIR__ . '/..' . '/santigarcor/laratrust/src/LaratrustServiceProvider.php',
-        'Laratrust\\Middleware\\LaratrustAbility' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Middleware/LaratrustAbility.php',
-        'Laratrust\\Middleware\\LaratrustMiddleware' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Middleware/LaratrustMiddleware.php',
-        'Laratrust\\Middleware\\LaratrustPermission' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Middleware/LaratrustPermission.php',
-        'Laratrust\\Middleware\\LaratrustRole' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Middleware/LaratrustRole.php',
-        'Laratrust\\Models\\LaratrustPermission' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Models/LaratrustPermission.php',
-        'Laratrust\\Models\\LaratrustRole' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Models/LaratrustRole.php',
-        'Laratrust\\Models\\LaratrustTeam' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Models/LaratrustTeam.php',
-        'Laratrust\\Traits\\LaratrustDynamicUserRelationsCalls' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Traits/LaratrustDynamicUserRelationsCalls.php',
-        'Laratrust\\Traits\\LaratrustHasEvents' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Traits/LaratrustHasEvents.php',
-        'Laratrust\\Traits\\LaratrustHasScopes' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Traits/LaratrustHasScopes.php',
-        'Laratrust\\Traits\\LaratrustPermissionTrait' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Traits/LaratrustPermissionTrait.php',
-        'Laratrust\\Traits\\LaratrustRoleTrait' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Traits/LaratrustRoleTrait.php',
-        'Laratrust\\Traits\\LaratrustTeamTrait' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Traits/LaratrustTeamTrait.php',
-        'Laratrust\\Traits\\LaratrustUserTrait' => __DIR__ . '/..' . '/santigarcor/laratrust/src/Traits/LaratrustUserTrait.php',
+        'LaravelLegends\\PtBrValidator\\Rules\\Celular' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/Rules/Celular.php',
+        'LaravelLegends\\PtBrValidator\\Rules\\CelularComCodigo' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/Rules/CelularComCodigo.php',
+        'LaravelLegends\\PtBrValidator\\Rules\\CelularComDdd' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/Rules/CelularComDdd.php',
+        'LaravelLegends\\PtBrValidator\\Rules\\Cnh' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/Rules/Cnh.php',
+        'LaravelLegends\\PtBrValidator\\Rules\\Cnpj' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/Rules/Cnpj.php',
+        'LaravelLegends\\PtBrValidator\\Rules\\Cpf' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/Rules/Cpf.php',
+        'LaravelLegends\\PtBrValidator\\Rules\\CpfOuCnpj' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/Rules/CpfOuCnpj.php',
+        'LaravelLegends\\PtBrValidator\\Rules\\FormatoCep' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/Rules/FormatoCep.php',
+        'LaravelLegends\\PtBrValidator\\Rules\\FormatoCnpj' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/Rules/FormatoCnpj.php',
+        'LaravelLegends\\PtBrValidator\\Rules\\FormatoCpf' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/Rules/FormatoCpf.php',
+        'LaravelLegends\\PtBrValidator\\Rules\\FormatoCpfOuCnpj' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/Rules/FormatoCpfOuCnpj.php',
+        'LaravelLegends\\PtBrValidator\\Rules\\FormatoPis' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/Rules/FormatoPis.php',
+        'LaravelLegends\\PtBrValidator\\Rules\\FormatoPlacaDeVeiculo' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/Rules/FormatoPlacaDeVeiculo.php',
+        'LaravelLegends\\PtBrValidator\\Rules\\Pis' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/Rules/Pis.php',
+        'LaravelLegends\\PtBrValidator\\Rules\\Telefone' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/Rules/Telefone.php',
+        'LaravelLegends\\PtBrValidator\\Rules\\TelefoneComCodigo' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/Rules/TelefoneComCodigo.php',
+        'LaravelLegends\\PtBrValidator\\Rules\\TelefoneComDdd' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/Rules/TelefoneComDdd.php',
+        'LaravelLegends\\PtBrValidator\\Rules\\Uf' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/Rules/Uf.php',
+        'LaravelLegends\\PtBrValidator\\ValidatorProvider' => __DIR__ . '/..' . '/laravellegends/pt-br-validator/src/pt-br-validator/ValidatorProvider.php',
         'Laravel\\Fortify\\Actions\\AttemptToAuthenticate' => __DIR__ . '/..' . '/laravel/fortify/src/Actions/AttemptToAuthenticate.php',
         'Laravel\\Fortify\\Actions\\CompletePasswordReset' => __DIR__ . '/..' . '/laravel/fortify/src/Actions/CompletePasswordReset.php',
         'Laravel\\Fortify\\Actions\\ConfirmPassword' => __DIR__ . '/..' . '/laravel/fortify/src/Actions/ConfirmPassword.php',
@@ -5767,10 +5738,6 @@ class ComposerStaticInit97d2be3097feab22c9aa0041ee43a909
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Property\\Property' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Property/Property.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Processor' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Processor.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Rule' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Rule.php',
-        'Traitor\\Handlers\\AbstractTreeHandler' => __DIR__ . '/..' . '/kkszymanowski/traitor/src/Handlers/AbstractTreeHandler.php',
-        'Traitor\\Handlers\\Handler' => __DIR__ . '/..' . '/kkszymanowski/traitor/src/Handlers/Handler.php',
-        'Traitor\\TraitUseAdder' => __DIR__ . '/..' . '/kkszymanowski/traitor/src/TraitUseAdder.php',
-        'Traitor\\Traitor' => __DIR__ . '/..' . '/kkszymanowski/traitor/src/Traitor.php',
         'UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
         'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
         'Webmozart\\Assert\\Assert' => __DIR__ . '/..' . '/webmozart/assert/src/Assert.php',

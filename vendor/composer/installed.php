@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '63d30effd633be9319bff97ebcb92c51b332896a',
+        'reference' => '3d98f1b4b95498b958a3db3320ec95a3b2de7ddb',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -406,15 +406,6 @@
                 0 => 'v8.69.0',
             ),
         ),
-        'kkszymanowski/traitor' => array(
-            'pretty_version' => '0.2.5',
-            'version' => '0.2.5.0',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../kkszymanowski/traitor',
-            'aliases' => array(),
-            'reference' => '9770fc7de72ff585601dc9c42b31715d9fc40a24',
-            'dev_requirement' => false,
-        ),
         'kodova/hamcrest-php' => array(
             'dev_requirement' => true,
             'replaced' => array(
@@ -445,7 +436,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '63d30effd633be9319bff97ebcb92c51b332896a',
+            'reference' => '3d98f1b4b95498b958a3db3320ec95a3b2de7ddb',
             'dev_requirement' => false,
         ),
         'laravel/sail' => array(
@@ -482,6 +473,15 @@
             'install_path' => __DIR__ . '/../laravel/tinker',
             'aliases' => array(),
             'reference' => 'c808a7227f97ecfd9219fbf913bad842ea854ddc',
+            'dev_requirement' => false,
+        ),
+        'laravellegends/pt-br-validator' => array(
+            'pretty_version' => '8.0.3',
+            'version' => '8.0.3.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../laravellegends/pt-br-validator',
+            'aliases' => array(),
+            'reference' => '19fc447c26b30254a3879eca70c757bf0d61982a',
             'dev_requirement' => false,
         ),
         'league/commonmark' => array(
@@ -901,15 +901,6 @@
             'replaced' => array(
                 0 => '4.2.3',
             ),
-        ),
-        'santigarcor/laratrust' => array(
-            'pretty_version' => '6.3.2',
-            'version' => '6.3.2.0',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../santigarcor/laratrust',
-            'aliases' => array(),
-            'reference' => '9ab3bfdc06afe18b17f69b77cb77291c36dae9f6',
-            'dev_requirement' => false,
         ),
         'sebastian/cli-parser' => array(
             'pretty_version' => '1.0.1',
