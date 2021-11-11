@@ -40,8 +40,8 @@
                 @enderror
                 <br>
             <label>Confirmar Senha:</label>
-                <input id="password" name="password_confirmation" class="form-control @error('password_confirmation') is-invalid @enderror" type="password" placeholder="confirme sua senha" id="senhacc">
-                @error('password_confirmation')
+                <input id="confirmPassword" name="confirmPassword" class="form-control @error('confirmPassword') is-invalid @enderror" type="password" placeholder="confirme sua senha" id="senhacc">
+                @error('confirmPassword')
                     <span class="invalid-feedback" role="alert">
                         {{ $message }}
                     </span>
