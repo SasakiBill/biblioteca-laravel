@@ -23,7 +23,7 @@ class Book extends Model
         'description',
         'author',
         'category',
-        'status',
+        'book_status',
     ];
 
     public function user (){

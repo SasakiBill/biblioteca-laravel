@@ -21,6 +21,9 @@ Route::get('/library', function(){
     return view('library');
 });
 
+Route::get('list', 'Book@list');
+
+
 Route::get('/loans', function(){
     return view('loans');
 });

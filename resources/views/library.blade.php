@@ -1,5 +1,6 @@
 @extends('layouts.topnavuser')
-<section class="section-init">
-    
+<section class="libray-init">
+    <br><br>
+    <h1>Livros Disponíveis</h1>
     
 </section>
