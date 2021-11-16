@@ -290,7 +290,18 @@
     table {
         border-collapse: collapse;
         width: 100%;
-      }
+    }
+
+    table a{
+        text-decoration: none;
+        color: black;
+       
+    }
+
+    table a:hover{
+        color: green;
+        transition: 0.5s;
+    }
       
     th, td {
         padding: 8px;
@@ -299,7 +310,7 @@
     }
       
     td:hover {
-        background-color: yellow;
+        background-color: rgb(197, 197, 179);
         transition: 0.5s;
     }
 

@@ -9,7 +9,8 @@
             <th>Descrição</th>
             <th>Autor</th>
             <th>Categoria</th>
-            <th>Disponibilidade do Livro</th>
+            <th>Disponibilidade</th>
+            <th>Quer emprestar o livro?</th>
         </tr>
         @foreach ($books as $item)
             
@@ -19,6 +20,7 @@
                 <td>{{ $item->author }} </td>
                 <td>{{ $item->category}} </td>
                 <td>{{ $item->book_status }}</td>
+                <td> <a href="#">Emprestar livro</a> </td>
             </tr>
         @endforeach
     </table>
