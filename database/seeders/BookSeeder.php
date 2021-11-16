@@ -15,19 +15,11 @@ class BookSeeder extends Seeder
     public function run()
     {
         Book::query()->create([
-            'name' => 'teste',
-            'description' => 'O retorno de teste se deu após muitas tentativas de consertar o bug.',
+            'name' => 'teste 3',
+            'description' => 'A fatalidade de teste e o declínio do oriente médio.',
             'author' => 'teste',
-            'category' => 'teste',
+            'category' => 'Ficcção Científica',
             'book_status' => TRUE,
-        ]);
-
-        Book::query()->create([
-            'name' => ' Teste 2',
-            'description' => 'A queda do teste se deu após muitas batalhas vencidas pelo Oriente Médio. Seu filho irá conseguir substituí-lo?',
-            'author' => 'teste',
-            'category' => 'biography',
-            'book_status' => FALSE,
         ]);
         
     }
