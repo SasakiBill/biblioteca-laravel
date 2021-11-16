@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '3479b265a60c782f56d03499cc298e4fef143b15',
+        'reference' => 'dfdfdac3136d3c8004c274e25521fac069442ec0',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -436,7 +436,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '3479b265a60c782f56d03499cc298e4fef143b15',
+            'reference' => 'dfdfdac3136d3c8004c274e25521fac069442ec0',
             'dev_requirement' => false,
         ),
         'laravel/legacy-factories' => array(
@@ -761,6 +761,15 @@
             'install_path' => __DIR__ . '/../pragmarx/google2fa',
             'aliases' => array(),
             'reference' => '26c4c5cf30a2844ba121760fd7301f8ad240100b',
+            'dev_requirement' => false,
+        ),
+        'predis/predis' => array(
+            'pretty_version' => 'v1.1.9',
+            'version' => '1.1.9.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../predis/predis',
+            'aliases' => array(),
+            'reference' => 'c50c3393bb9f47fa012d0cdfb727a266b0818259',
             'dev_requirement' => false,
         ),
         'psr/container' => array(
