@@ -2,7 +2,8 @@
 
 namespace Database\Seeders;
 
-use App\Models\Book;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Seeder;
 
 class BookSeeder extends Seeder
@@ -14,12 +15,6 @@ class BookSeeder extends Seeder
      */
     public function run()
     {
-        Book::query()->create([
-            'name' => 'teste',
-            'description' => 'O retorno de teste se deu após muitas tentativas de consertar o bug.',
-            'author' => 'teste',
-            'category' => 'teste',
-            'book_status' => TRUE,
-        ]);
+        \App\Models\Article::factory()->count(10)->create(); 
     }
 }
