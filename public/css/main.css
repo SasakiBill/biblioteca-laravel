@@ -286,3 +286,37 @@
         color: white;
         font-size: 20px;
     }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+      
+    td:hover {
+        background-color: yellow;
+        transition: 0.5s;
+    }
+
+    .about-section{
+        margin-top: 4vw;
+    }
+
+    .about-section p{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: justify;
+        font-size: 2em;
+        padding: 1vw;
+    }
+
+    .contact-section p{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: justify;
+        font-size: 2em;
+        padding: 1vw;
+    }
