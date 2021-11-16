@@ -9,46 +9,34 @@
         
     }
 
+    nav{
+        position: absolute;
+        top: 0;
+        background-color: black;
+        width: 1920px;
+        height: 50px;
+        margin-left: -47%;
+    }
+
+    nav ul a{
+        color: white;
+        text-decoration-line: none;
+        padding: 20px;
+    }
+
+    nav ul a:hover{
+        color: black;
+        background-color: white;
+        transition: 0.5s;
+        
+        padding: 5px 5px 5px 5px;
+    }
+    
     .topnavadmin-container{
         display: none;
     }
 
-    .topnav-container{
-        position: relative;
-        background-color: #000000;
-        margin-top: 25px;
-        height: 50px;
-        width: 1385px;
-        margin-left: -10px;
-       
-    }
 
-    .topnavbuttons-container{
-        position: absolute;
-        
-        
-    }
-
-    .topnavbuttons-container a{
-        text-decoration-line: none;
-        color: #ffffff;
-        cursor: pointer;
-        padding: 10px 10px 10px 10px;
-        right: 0%;
-        font-size: 18px;
-        margin-top: -3%;
-        font: "Open Sans", sans-serif;
-    }
-
-    .topnavbuttons-container ul{
-        margin-top: 2%;
-    }
-
-    .topnavbuttons-container a:hover{
-        color: rgb(0, 0, 0);
-        background-color: white;
-        transition: 0.5s;
-    }
 
     .login-container{
         top: 10px;
@@ -57,7 +45,7 @@
     }
 
     .rightbuttons-container{
-        right: auto;
+        margin-left: 45%;
     }
 
     .botaologin-container{
@@ -67,6 +55,14 @@
     .modalacesso-container a{
         margin-left: 49%;
         
+    }
+
+    .loginsection-container h1{
+        text-align: center;
+    }
+
+    .registersection-container h1{
+        text-align: center;
     }
 
     .botaologin-container a{
@@ -85,16 +81,31 @@
     }
 
     .verification-container{
-        margin-top: -2%;
-        margin-left: 80%;
+        margin-left: 55%;
+        margin-top: -55px;
+        position: relative;
+    }
+
+    .verification-container a{
+        text-decoration-line: none;
+        color: white;
+        padding: 20px;
+    }
+
+    .verification-container a:hover{
+        color: black;
+        background-color: white;
+        transition: 0.5s;
+        padding: 5px 5px 5px 5px;
     }
 
     .botoesverif-container a{
-        margin-top: 10px;
+        margin-top: 10%;
     }
 
     .caixainicial-container{
-        top: 30px;
+        position: relative;
+        
         float: left;
     }
 
@@ -121,57 +132,6 @@
 
     .titulo-container{
         top: 60px;
-    }
-
-    .modalDialog {
-        max-height: auto;
-        overflow-y: auto;
-        overflow-x: hidden;
-        position: fixed;   
-        top: -120px;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: rgba(0,0,0,0.8);
-        z-index: 99999;
-        opacity:0;
-        -webkit-transition: opacity 400ms ease-in;
-        -moz-transition: opacity 400ms ease-in;
-        transition: opacity 400ms ease-in;
-        pointer-events: none;
-    }
-
-    .modalDialog:target {
-        opacity:1;
-        pointer-events: auto;
-    }
-
-    .modalDialog > div {
-        width: auto;
-        position: relative;
-        margin: 9% auto;
-        padding: 10px 20px 13px 20px;
-        border-radius: 10px;
-        background-color: #ffffff;
-    }
-
-    .close {
-        background: #5f4dee;
-        color: #000000;
-        line-height: 25px;
-        position: absolute;
-        right: 10px;
-        text-align: center;
-        top: 130px;
-        width: 24px;
-        text-decoration: none;
-        font-weight: bold;
-        -webkit-border-radius: 12px;
-        -moz-border-radius: 12px;
-        border-radius: 12px;
-        -moz-box-shadow: 1px 1px 3px #000;
-        -webkit-box-shadow: 1px 1px 3px #000;
-        box-shadow: 1px 1px 3px #000;
     }
 
     ::placeholder{
@@ -312,14 +272,51 @@
     }
 
     footer {
+        position: fixed;
+        height: 50px;
         background-color: rgb(0, 0, 0);
-        margin-left: -10px;
-        margin-right: -10px;
-        margin-top: 150px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        margin-bottom: 0px;
     }
 
     footer p{
         text-align: center;
         color: white;
         font-size: 20px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+      
+    td:hover {
+        background-color: yellow;
+        transition: 0.5s;
+    }
+
+    .about-section{
+        margin-top: 4vw;
+    }
+
+    .about-section p{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: justify;
+        font-size: 2em;
+        padding: 1vw;
+    }
+
+    .contact-section p{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: justify;
+        font-size: 2em;
+        padding: 1vw;
     }

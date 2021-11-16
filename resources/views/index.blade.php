@@ -1,5 +1,5 @@
-@extends('main')
+@extends('layouts.topnavuser')
 
-@section('content')
-    <h1>Bublio</h1>
-@endsection
+<section class="section-init">
+
+</section>

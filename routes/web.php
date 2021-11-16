@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\BookController;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,12 +16,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('main');
 });
 
-Route::get('/library', function(){
+Route::get('/library', [BookController::class, 'dbOperations']);
+
+/*Route::get('/library', function(){
     return view('library');
-});
+});*/
+
+
+
+
+
 
 Route::get('/loans', function(){
     return view('loans');

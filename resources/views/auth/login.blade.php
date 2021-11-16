@@ -1,7 +1,8 @@
-@extends('main')
+@extends('layouts.topnavuser')
 
-@section('content')
-    <h1>Log In</h1>
+<section class="loginsection-container">
+    <br><br>
+    <h1>Acesse sua conta!</h1>
 
     <div class="formulario">
         <form method="POST" action="{{ route('login') }}">
@@ -27,4 +28,4 @@
             <input type="submit" value="Entrar!">
         </form>
     </div>
-@endsection
+</section>
