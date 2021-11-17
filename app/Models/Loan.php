@@ -31,6 +31,4 @@ class Loans extends Model
     public function book(){
         $this->belongsTo(Book::class);
     }
-    
-    
 }
