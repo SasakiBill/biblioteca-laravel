@@ -6,7 +6,11 @@
 
     span{
         color: red;
-        
+    }
+
+    .section-init h1{
+        font-size: 2em;
+
     }
 
     nav{
@@ -36,7 +40,9 @@
         display: none;
     }
 
-
+    .library-init h1{
+        font-size: 2em;
+    }
 
     .login-container{
         top: 10px;
@@ -57,13 +63,16 @@
         
     }
 
-    .loginsection-container h1{
-        text-align: center;
+    .loginsection-container{
+        margin-left: 20vw;
     }
 
-    .registersection-container h1{
+    .loginsection-container h1{
         text-align: center;
+        margin-left: 20vw;
     }
+
+    
 
     .botaologin-container a{
         text-decoration: none;
@@ -110,19 +119,38 @@
     }
 
     .caixainicial-container p{
-        font-size: 30px;
+        font-size: 2em;
         text-align: justify;
     }
 
     .imageminicial-container{
-        margin-left: 55%;
-        margin-top: 4%;
+        margin-left: 45vw;
+        margin-top: -12vh;
     }
 
     .imageminicial-container img{
-        width: 100%;
+        width: 50vw;
         border-radius: 30px;
+    }
 
+    .imagemregistro-container{
+        margin-left: -30vw;
+        margin-top: -10vw;
+    }
+
+    .imagemregistro-container img{
+        width: 40vw;
+        border-radius: 3rem;
+    }
+
+    .imagemlogin-container{
+        margin-left: -5vw;
+        margin-top: -10vw;
+    }
+
+    .imagemlogin-container img{
+        width: 40vw;
+        border-radius: 3em;
     }
 
     .modalacesso-container .titulo-container p{
@@ -167,16 +195,30 @@
         transition: 0.5s;
     }
 
+    .registersection-container h1{
+        text-align: center;
+        margin-left: -5vw;
+    }
+
+    .registersection-container{
+        margin-left: 45vw;
+    }
+
     form{
-        margin-left: 42%;
-        width: 200px;
-        height: auto;
+        margin-left: 14.5vw;
+        width: 20vw;
+        height: 15vh;
+    }
+
+    .formulariodois form{
+        margin-left: 40vw;
     }
 
     form label{
         text-align: center;
         color: rgb(0, 0, 0);
         font-size: 14px;
+        
     }
 
     .formulario input[type=text]{
@@ -186,7 +228,7 @@
         text-align: center;
         display: inline-block;
         border: 1px solid #ccc;
-        border-radius: 4px;
+        border-radius: 6em;
         box-sizing: border-box;
     }
     
@@ -199,7 +241,19 @@
         margin: 10px 0;
         display: inline-block;
         border: 1px solid #ccc;
-        border-radius: 4px;
+        border-radius: 6em;
+        box-sizing: border-box;
+    }
+
+    .formulariodois input[type=email]{
+        width: 100%;
+        height: 25px;
+        text-align: center;
+        padding: 10px 16px;
+        margin: 10px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 6em;
         box-sizing: border-box;
     }
 
@@ -207,13 +261,21 @@
         width: 100%;
         height: 25px;
         padding: 10px 16px;
-        
         display: inline-block;
         border: 1px solid #ccc;
-        border-radius: 4px;
+        border-radius: 6em;
         box-sizing: border-box;
     }
 
+    .formulariodois input[type=password]{
+        width: 100%;
+        height: 25px;
+        padding: 10px 16px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 6em;
+        box-sizing: border-box;
+    }
 
     .formulario input[type=tel]{
         width: 100%;
@@ -222,7 +284,7 @@
         
         display: inline-block;
         border: 1px solid #ccc;
-        border-radius: 4px;
+        border-radius: 6em;
         box-sizing: border-box;
     }
 
@@ -232,18 +294,19 @@
         background-color: white;
         color: #000000;
         padding: 12x 16px;
-       
-        border: none;
-        border-radius: 4px;
+        border-color: black;
+        border-radius: 6em;
         cursor: pointer;
-        height: 20px;
+        height: 6vh;
+        font-size: 1em;
     }
+
 
     .formulario input[type=submit]:hover{
         color: white;
         background-color: #000000;
         border-color: white;
-        border-width: thick;
+        border-width: thin;
         transition: 0.5s;
         height: 40px;
 
@@ -254,18 +317,18 @@
         background-color: white;
         color: #000000;
         padding: 12x 16px;
-       
-        border: none;
-        border-radius: 4px;
+        border-color: black;
+        border-radius: 6em;
         cursor: pointer;
-        height: 20px;
+        height: 6vh;
+        font-size: 1em;
     }
 
     .formulariodois input[type=submit]:hover{
         color: white;
         background-color: #000000;
         border-color: white;
-        border-width: thick;
+        border-width: thin;
         transition: 0.5s;
         height: 40px;
 
@@ -295,12 +358,14 @@
     table a{
         text-decoration: none;
         color: black;
+        text-align: center;
        
     }
 
     table a:hover{
         color: green;
         transition: 0.5s;
+        font-size: 1.3em;
     }
       
     th, td {
