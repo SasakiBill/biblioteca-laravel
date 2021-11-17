@@ -25,10 +25,7 @@ Route::get('/library', [BookController::class, 'dbOperations']);
     return view('library');
 });*/
 
-
-
-
-
+Route::get('add-to-loan/{id}', [BookController::class, 'BookController@addToLoan']);
 
 Route::get('/loans', function(){
     return view('loans');

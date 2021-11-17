@@ -12,13 +12,20 @@ class BookController extends Controller{
     }*/
     public function dbOperations(){
         $books = DB::table('books')->get();
-
+        
         return view('library', ['books' => $books]);
     }
 
-    public function __invoke()
-    {
-        // ...
+    public function addToLoan($id){
+        $books = Book::find($id);
+        $loan = session()->get('loan');
+
+        $loan[$id] = [
+            "id" => $books->id,
+            "name" => $books->name,
+        ];
+
+        
     }
     
 }
