@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '323eda3d6ff24d2ad31044320ebe125eea4a279f',
+        'reference' => '4439550a3a638285c28797583f5fd35d48acce21',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -436,7 +436,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '323eda3d6ff24d2ad31044320ebe125eea4a279f',
+            'reference' => '4439550a3a638285c28797583f5fd35d48acce21',
             'dev_requirement' => false,
         ),
         'laravel/legacy-factories' => array(
@@ -482,6 +482,15 @@
             'install_path' => __DIR__ . '/../laravel/tinker',
             'aliases' => array(),
             'reference' => 'c808a7227f97ecfd9219fbf913bad842ea854ddc',
+            'dev_requirement' => false,
+        ),
+        'laravelcollective/html' => array(
+            'pretty_version' => 'v6.2.1',
+            'version' => '6.2.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../laravelcollective/html',
+            'aliases' => array(),
+            'reference' => 'ae15b9c4bf918ec3a78f092b8555551dd693fde3',
             'dev_requirement' => false,
         ),
         'laravellegends/pt-br-validator' => array(
