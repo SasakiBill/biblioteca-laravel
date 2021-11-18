@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BookController;
+use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
 
@@ -31,6 +32,8 @@ Route::get('/loans', function(){
     return view('loans');
 });
 
+Route::get('logout', [LoginController::class, 'logout']);
+
 Route::get('/about', function(){
     return view('about');
 });
@@ -39,3 +42,4 @@ Route::get('/book-management', function(){
     return view('book-management');
 });
 
+require_once __DIR__ . '/fortify.php';

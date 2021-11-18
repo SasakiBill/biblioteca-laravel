@@ -5,16 +5,22 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests\LoginRequest;
+use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
-{
+{   
     public function show()
     {
         return view('auth.login');
     }
 
-    public function login(LoginRequest $request)
+    public function logout(Request $request) {
+        Auth::logout();
+        return redirect('/login')->with(['msg_body' => 'Você Deslogou!']);
+    }
+
+    /*public function login(LoginRequest $request)
     {
         $credentials = $request->getCredentials();
 
@@ -28,5 +34,7 @@ class LoginController extends Controller
         Auth::login($user);
 
         return $this->authenticated($request, $user);
-    }
+    }*/
+
+    
 }

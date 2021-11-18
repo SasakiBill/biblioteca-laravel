@@ -1,8 +1,8 @@
 
     body{
-        background-color: rgb(255, 255, 255);
+        background: rgb(164, 210, 236);
         overflow-x: hidden;
-        background: rgb(238,174,202);
+        background: rgb(164, 210, 236);
         background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     }
 
@@ -12,7 +12,6 @@
 
     .section-init h1{
         font-size: 2em;
-
     }
 
     nav{
@@ -140,7 +139,7 @@
 
     .imagemregistro-container{
         margin-left: -30vw;
-        margin-top: -10vw;
+        margin-top: -30vw;
     }
 
     .imagemregistro-container img{
@@ -150,7 +149,7 @@
 
     .imagemlogin-container{
         margin-left: -5vw;
-        margin-top: -10vw;
+        margin-top: -17vw;
     }
 
     .imagemlogin-container img{
@@ -217,6 +216,36 @@
 
     .formulariodois form{
         margin-left: 40vw;
+    }
+
+    .redirect-container{
+        margin-left: 47vw;
+        margin-top: 15vh;
+    }
+
+    .redirect-container a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .redirect-container a:hover{
+        color: black;
+        transition: 0.5s;
+    }
+
+    .return-container{
+        margin-left: 19vw;
+        margin-top: 45vh;
+    }
+
+    .return-container a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .return-container a:hover{
+        color: black;
+        transition: 0.5s;
     }
 
     form label{
@@ -356,6 +385,7 @@
     }
 
     table {
+        
         border-collapse: collapse;
         width: 100%;
     }
@@ -368,9 +398,15 @@
     }
 
     table a:hover{
-        color: green;
+        
+        color: rgb(15, 226, 15);
         transition: 0.5s;
         font-size: 1.3em;
+    }
+
+    th{
+        background-color: slategrey;
+        color: white;
     }
       
     th, td {
@@ -380,7 +416,7 @@
     }
       
     td:hover {
-        background-color: rgb(197, 197, 179);
+        background-color: rgb(255, 255, 255);
         transition: 0.5s;
     }
 

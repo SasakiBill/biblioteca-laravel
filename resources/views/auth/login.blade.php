@@ -1,4 +1,4 @@
-@extends('layouts.topnavuser')
+@extends('layouts.newuser')
 
 <section class="loginsection-container">
     <br><br>
@@ -27,7 +27,11 @@
                 <br>
             <input type="submit" value="Entrar!">
         </form>
-
+        
+        <div class="redirect-container">
+            <a href="/register">Registre-se!</a>
+        </div>
+        
         <div class="imagemlogin-container">
             <img src="/img/bibcinco.jpg" alt="bibregister">
         </div>

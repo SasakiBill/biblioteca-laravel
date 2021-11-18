@@ -33,6 +33,7 @@
                             
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                 {{ csrf_field() }}
+                                
                             </form>
                         @else
                             <a href="{{ route('login') }}">Login</a>

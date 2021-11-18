@@ -1,4 +1,4 @@
-@extends('layouts.topnavuser')
+@extends('layouts.newuser')
 
 <section class="registersection-container">
     <br><br>
@@ -56,6 +56,10 @@
 
             <input type="submit" value="Cadastrar!">
         </form>
+
+        <div class="return-container">
+            <a href="/login">Voltar à Tela de Login</a>
+        </div>
 
         <div class="imagemregistro-container">
             <img src="/img/bibquatro.jpg" alt="bibregister">
