@@ -16,7 +16,7 @@
                 <td>{{ $item->id }} </td>
                 <td>{{ $item->date_start}} </td>
                 <td>{{ $item->date_end }} </td>
-                <td> <a href="{{ url('add-to-loan/'.$item->id) }}">Devolver Livro</a> </td>
+                <td> <a href="{{ url('book'.$item->id) }}">Devolver Livro</a> </td>
             </tr>
         @endforeach
 </section>
