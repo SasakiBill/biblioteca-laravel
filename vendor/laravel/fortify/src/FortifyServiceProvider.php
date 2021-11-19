@@ -88,6 +88,8 @@ class FortifyServiceProvider extends ServiceProvider
     {
         $this->configurePublishing();
         $this->configureRoutes();
+
+        
     }
 
     /**

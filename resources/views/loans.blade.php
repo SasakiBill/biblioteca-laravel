@@ -1,19 +1,16 @@
 @extends('layouts.topnavuser')
 <section class="section-init">
-    <h1>Meus Empréstimos Atuais</h1>
-    @if (session('loan'))
-        @foreach (session('loan') as $id => $infoLivro)
-            <tr>
-                <td data-th="loan">
-                    <div class="row">
-                        <div class="col-sm-9">
-                            <h3>{{ $infoLivro['name'] }}</h3>
-                        </div>
-                    </div>
-                </td>
-            </tr>
+    <br><br>
+    <h1>Meus Livros Emprestados</h1>
+    <table border="1">
+        <tr>
+            <th>Id do Livro</th>
+            <!--Irei tirar depois é só pra testes-->
+            <th>Nome do Livro</th>
+            <th>Data de Empréstimo do Livro</th>
+            <th>Data de Devolução à Biblioteca</th>
+            <th>Quer devolver o livro?</th>
+        </tr>
 
-            
-        @endforeach
-    @endif
+        
 </section>
