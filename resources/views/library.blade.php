@@ -20,7 +20,7 @@
                 <td>{{ $item->author }} </td>
                 <td>{{ $item->category}} </td>
                 <td>{{ $item->book_status }}</td>
-                <td> <a href="{{ url('add-to-loan/'.$item->id) }}">Emprestar livro</a> </td>
+                <td> <a href="{{ url('loans/'.$item->id) }}">Emprestar livro</a> </td>
             </tr>
         @endforeach
 <!--

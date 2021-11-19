@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BookController;
+use App\Http\Controllers\LoansController;
 use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
@@ -19,9 +20,11 @@ use Illuminate\Support\Facades\Route;
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/library', [BookController::class, 'dbOperations']);
 
-    Route::get('/loans', function(){
+    Route::get('/loans', [LoansController::class, 'lbOperations'])->name('lbOperations');
+
+    /*Route::get('/loans', function(){
         return view('loans');
-    });
+    });*/
 
     Route::get('/about', function(){
         return view('about');
@@ -41,8 +44,6 @@ Route::get('/', function () {
 /*Route::get('/library', function(){
     return view('library');
 });*/
-
-Route::get('add-to-loan/{id}', [BookController::class, 'addToLoan']);
 
 Route::get('logout', [LoginController::class, 'logout']);
 
