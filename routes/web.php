@@ -18,6 +18,8 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/book-management', function(){
         return view('book-management');
     });
+
+    Route::get('add-to-loan/{id}', [BookController::class, 'addToLoan']);
     
 });
 

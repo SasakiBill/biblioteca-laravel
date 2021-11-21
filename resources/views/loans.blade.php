@@ -2,21 +2,31 @@
 <section class="section-init">
     <br><br>
     <h1>Meus Livros Emprestados</h1>
+
     <table border="1">
         <tr>
-            <th>Id do Livro</th>
-            <!--Irei tirar depois é só pra testes-->
-            <th>Data de Empréstimo do Livro</th>
-            <th>Data de Devolução à Biblioteca</th>
-            <th>Quer devolver o livro?</th>
+            <th>ID do livro</th>
+            <!--Usando ID apenas para testes//será removido na versão final-->
+            <th>Nome do Livro</th>
+            <th>Descrição</th>
+            <th>Autor</th>
+            <th>Categoria</th>
+            <th>Data de Devolução</th>
+            
         </tr>
 
-        @foreach ($loans as $item)
+    @if(session('loan'))
+        @foreach(session('loan') as $id => $loans)
+            
             <tr>
-                <td>{{ $item->id }} </td>
-                <td>{{ $item->date_start}} </td>
-                <td>{{ $item->date_end }} </td>
-                <td> <a href="{{ url('book'.$item->id) }}">Devolver Livro</a> </td>
+                <td>{{ $loans['id'] }}</td>
+                <td>{{ $loans['name'] }}</td>
+                <td>{{ $loans['description'] }}</td>
+                <td>{{ $loans['author'] }} </td>
+                <td>{{ $loans['category' ] }} </td>
+                <td> <td>
             </tr>
         @endforeach
+    @endif
+    
 </section>
