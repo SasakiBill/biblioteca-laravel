@@ -17,7 +17,7 @@
         "laravelcollective/html": "^6.2",
         "laravellegends/pt-br-validator": "^8.0",
         "predis/predis": "^1.1",
-        "spatie/laravel-permission": "^5.3"
+        "spatie/laravel-permission": "^5.4"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.6",

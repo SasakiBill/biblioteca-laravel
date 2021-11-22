@@ -31,3 +31,7 @@ Route::get('/', function () {
 Route::get('logout', [LoginController::class, 'logout']);
 
 require_once __DIR__ . '/fortify.php';
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+

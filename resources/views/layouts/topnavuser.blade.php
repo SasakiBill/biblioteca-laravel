@@ -66,7 +66,7 @@
                     @if (Route::has('login'))
                     <div class="botoesverif-container">
                         @auth
-                            <a href="{{ url('/home') }}">Home</a>
+                            
                             <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                 Logout
                             </a>

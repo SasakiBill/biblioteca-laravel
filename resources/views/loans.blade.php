@@ -26,7 +26,7 @@
                 <td>{{ $loans['description'] }}</td>
                 <td>{{ $loans['author'] }} </td>
                 <td>{{ $loans['category' ] }} </td>
-                <td> <td>
+                
             </tr>
         @endforeach
     @endif

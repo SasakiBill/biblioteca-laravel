@@ -15,8 +15,8 @@
                         {{ $message }}
                     </span>
                 @enderror
-                <br>
-                <br>
+                
+                
             <label for="password" class="form-label"></label>
                 <input name="password" class="form-control @error('password') is-invalid @enderror" type="password" placeholder="Digite sua Senha" value="{{ old('password') }}">
                 @error('password')
@@ -24,9 +24,10 @@
                         {{ $message }}
                     </span>
                 @enderror
-                <br>
-                <br>
-            <input type="submit" value="Entrar!">
+            <div class="submitformbotao-container">
+                <input type="submit" value="Entrar!">
+            </div>
+            
         </form>
         
         <div class="redirect-container">
