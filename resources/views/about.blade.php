@@ -1,4 +1,6 @@
 @extends('layouts.topnavuser')
+@extends('layouts.footeruser')
+
 <section class="section-init">
     <div class="about-section">
         <p>Biblio se trata de um sistema simples para visualização e empréstimos online de uma biblioteca de livros. 

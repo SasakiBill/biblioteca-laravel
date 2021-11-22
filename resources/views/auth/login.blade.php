@@ -1,4 +1,5 @@
 @extends('layouts.newuser')
+@extends('layouts.footeruser')
 
 <section class="loginsection-container">
     <br><br>

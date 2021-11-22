@@ -398,15 +398,9 @@
     }
 
     table a:hover{
-        
         color: rgb(15, 226, 15);
         transition: 0.5s;
         font-size: 1.3em;
-    }
-
-    th{
-        background-color: slategrey;
-        color: white;
     }
       
     th, td {

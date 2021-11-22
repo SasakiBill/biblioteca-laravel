@@ -1,9 +1,10 @@
 @extends('layouts.topnavuser')
+@extends('layouts.footeruser')
 
 <section class="library-init">
     <br><br>
     <h1>Livros Disponíveis</h1>
-    <table border="1">
+    <table class="table-dark" border="1">
         <tr>
             <th>Nome do Livro</th>
             <th>Descrição</th>

@@ -1,5 +1,7 @@
 
 @extends('layouts.topnavuser')
+@extends('layouts.footeruser')
+
 <section class="section-init">
     <br><br>
     <h1>Página Inicial</h1>
