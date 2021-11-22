@@ -19,6 +19,7 @@ class Loans extends Model
      * @var string[]
      */
     protected $fillable = [
+        'id',
         'date_start',
         'date_end',
         
@@ -31,6 +32,4 @@ class Loans extends Model
     public function book(){
         $this->belongsTo(Book::class);
     }
-    
-    
 }

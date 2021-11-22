@@ -1,9 +1,10 @@
 @extends('layouts.topnavuser')
+@extends('layouts.footeruser')
+
 <section class="section-init">
     <div class="about-section">
         <p>Biblio se trata de um sistema simples para visualização e empréstimos online de uma biblioteca de livros. 
-        <br>Para usar todos os recursos do site, sinta-se a vontade para criar uma conta através do botão de registro
-        localizado no canto superior direito da tela do site.</p>
+        
     </div>
 
     <div class="contact-section">

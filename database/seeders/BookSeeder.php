@@ -15,10 +15,10 @@ class BookSeeder extends Seeder
     public function run()
     {
         Book::query()->create([
-            'name' => 'teste 3',
-            'description' => 'A fatalidade de teste e o declínio do oriente médio.',
-            'author' => 'teste',
-            'category' => 'Ficcção Científica',
+            'name' => 'teste 2',
+            'description' => 'Teste 2',
+            'author' => 'teste 2',
+            'category' => 'Investigação',
             'book_status' => TRUE,
         ]);
         
