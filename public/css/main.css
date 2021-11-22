@@ -260,6 +260,11 @@
         margin-top: 5vh;
     }
 
+    .namediv-container{
+        position: relative;
+        margin-top: 10vh;
+    }
+
     .formulario input[type=text]{
         width: 100%;
         height: 25px;
