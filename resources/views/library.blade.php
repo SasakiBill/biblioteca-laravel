@@ -4,7 +4,7 @@
 <section class="library-init">
     <br><br>
     <h1>Livros Disponíveis</h1>
-    <table class="table-dark" border="1">
+    <table border="1">
         <tr>
             <th>Nome do Livro</th>
             <th>Descrição</th>
@@ -24,42 +24,41 @@
                 <td> <a href="{{ url('add-to-loan/'.$item->id) }}">Emprestar livro</a> </td>
             </tr>
         @endforeach
-
-        @section('scripts')
-
-
-        <script type="text/javascript">
-        // this function is for update card
-            $(".update-cart").click(function (e) {
-                e.preventDefault();
-                var ele = $(this);
-                    $.ajax({
-                    url: '{{ url('update-cart') }}',
-                    method: "patch",
-                    data: {_token: '{{ csrf_token() }}', id: ele.attr("data-id"), quantity: ele.parents("tr").find(".quantity").val()},
-                    success: function (response) {
-                        window.location.reload();
-                    }
-                    });
-                });
-            $(".remove-from-cart").click(function (e) {
-                e.preventDefault();
-                var ele = $(this);
-                if(confirm("Are you sure")) {
-                    $.ajax({
-                        url: '{{ url('remove-from-cart') }}',
-                        method: "DELETE",
-                        data: {_token: '{{ csrf_token() }}', id: ele.attr("data-id")},
-                        success: function (response) {
-                            window.location.reload();
-                                
-                        }
-                    });
-                }
-            });
-        </script>
-        
-        @endsection
+<!--
+        <div class="modalacesso-container">
+            <a href="#openModal">Abrir Cadastro</a>
+    
+            <div id="openModal" class="modalDialog">
+                <a href="#close" title="Close" class="close">X</a>
+                <div class="titulo">
+                    <p>Formulário Simples
+                    <p>
+    
+                </div>
+            
+            <div class="formulario">
+                <form method="get">
+                    <label>Name:
+                        <input type="text" placeholder="example" id="username">
+                    </label>
+                    <label>E-mail:
+                        <input type="email" placeholder="email@email" id="email">
+                    </label>
+                    <label>CEP:
+                        <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+                            onblur="pesquisacep(this.value);" /></label><br />
+                    <label>Street:
+                        <input name="rua" type="text" id="rua" size="60" /></label><br />
+                    <label>District:
+                        <input name="bairro" type="text" id="bairro" size="40" /></label><br />
+                    <label>City:
+                        <input name="cidade" type="text" id="cidade" size="40" /></label><br />
+                    <label>State:
+                        <input name="uf" type="text" id="uf" size="2" /></label><br />
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>-->
         </div>
     </table>
 </section>
