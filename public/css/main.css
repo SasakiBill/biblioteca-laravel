@@ -139,7 +139,7 @@
 
     .imagemregistro-container{
         margin-left: -30vw;
-        margin-top: -30vw;
+        margin-top: -35vw;
     }
 
     .imagemregistro-container img{
@@ -260,11 +260,9 @@
         margin-top: 5vh;
     }
 
-    .namediv-container{
-        position: relative;
-        margin-top: 10vh;
-    }
+    
 
+    
     .formulario input[type=text]{
         width: 100%;
         height: 25px;
@@ -274,7 +272,7 @@
         border: 1px solid #ccc;
         border-radius: 6em;
         box-sizing: border-box;
-        margin-top: -10vh;
+        margin-top: 0vh;
     }
     
 
@@ -288,6 +286,7 @@
         border: 1px solid #ccc;
         border-radius: 6em;
         box-sizing: border-box;
+        
     }
 
     .formulariodois input[type=email]{
@@ -300,6 +299,7 @@
         border: 1px solid #ccc;
         border-radius: 6em;
         box-sizing: border-box;
+        
     }
 
     .formulario input[type=password]{
@@ -310,6 +310,7 @@
         border: 1px solid #ccc;
         border-radius: 6em;
         box-sizing: border-box;
+        
     }
 
     .formulariodois input[type=password]{
@@ -320,6 +321,7 @@
         border: 1px solid #ccc;
         border-radius: 6em;
         box-sizing: border-box;
+        
     }
 
     .formulario input[type=tel]{
@@ -344,6 +346,7 @@
         cursor: pointer;
         height: 6vh;
         font-size: 1em;
+        margin-top: 5vh;
         
     }
 

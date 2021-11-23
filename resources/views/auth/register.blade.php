@@ -18,7 +18,7 @@
                 @enderror
             </div>
             
-
+            
             <label for="email" class="form-label"></label>
                 <input id="email" name="email" class="form-control @error('email') is-invalid @enderror" type="email" placeholder="Digite seu Email" value="{{ old('email') }}">
                 @error('email')

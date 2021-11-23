@@ -15,10 +15,10 @@ class BookSeeder extends Seeder
     public function run()
     {
         Book::query()->create([
-            'name' => 'teste 4',
-            'description' => 'Teste.',
+            'name' => 'teste 2',
+            'description' => 'Descrição descrição',
             'author' => 'teste',
-            'category' => 'Ação',
+            'category' => 'Contos de Fadas',
             'book_status' => TRUE,
         ]);
         

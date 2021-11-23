@@ -20,18 +20,17 @@ Route::group(['middleware' => 'auth'], function () {
     });
 
     Route::get('add-to-loan/{id}', [BookController::class, 'addToLoan']);
+
+    Route::get('/', function () {
+        return view('main');
+    });
     
 });
 
-Route::get('/', function () {
-    return view('main');
-});
-
-
-Route::get('logout', [LoginController::class, 'logout']);
-
 require_once __DIR__ . '/fortify.php';
 Auth::routes();
+
+Route::post('logout', [LoginController::class, 'logout'])->name('logout');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
