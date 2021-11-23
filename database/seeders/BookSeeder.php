@@ -17,8 +17,8 @@ class BookSeeder extends Seeder
         Book::query()->create([
             'name' => 'teste 2',
             'description' => 'Descrição descrição',
-            'author' => 'teste',
-            'category' => 'Contos de Fadas',
+            'author' => 'Autor teste',
+            'category' => 'Guerra',
             'book_status' => TRUE,
         ]);
         
