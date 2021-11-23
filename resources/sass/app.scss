@@ -7,3 +7,13 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 @import '~bootstrap-icons/font/bootstrap-icons';
+
+.element {
+    @include float-left;
+  }
+  .another-element {
+    @include float-right;
+  }
+  .one-more {
+    @include float-none;
+  }
