@@ -1,7 +1,9 @@
-@extends('layouts.topnavuser')
-@extends('layouts.footeruser')
+{{-- @extends('layouts.topnavuser') --}}
+@extends('layouts.bootstraptopnav')
+@extends('layouts.bootstrapfooter')
+{{-- @extends('layouts.footeruser') --}}
 
-<section class="section-init">
+<section class="section-init position-fixed" style="margin-top: 5vw;>
     <br><br>
     <h1>Meus Livros Emprestados</h1>
 

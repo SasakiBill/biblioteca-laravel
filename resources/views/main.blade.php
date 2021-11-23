@@ -12,7 +12,7 @@
                 <p>Sistema simples para visualização e empréstimos de livros.</p>
             </div>
             <div class="float-end">
-                <img src="/img/bibseis.jpg" alt="biblogo">
+                <img src="/img/bibseis.jpg" class="img-thumbnail">
             </div>
         </div>
     </div>
