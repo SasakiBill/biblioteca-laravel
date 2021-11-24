@@ -32,7 +32,7 @@
                     @enderror
                 </div>
 
-                <button class="btn btn-dark" type="submit">Cadastrar!</button>
+                <button class="btn btn-dark" type="submit">Entrar!</button>
                 <div style="margin-top: 2vw">
                     <a href="/register">Registre-se!</a>
                 </div>
