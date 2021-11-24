@@ -27,6 +27,8 @@ Route::group(['middleware' => 'auth'], function () {
     
 });
 
+Route::resource('/admin/users', UserController::class);
+
 require_once __DIR__ . '/fortify.php';
 Auth::routes();
 

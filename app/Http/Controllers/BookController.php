@@ -3,8 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\Book;
+use App\Models\Loan;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Database\Eloquent\Model;
+
 
 class BookController extends Controller{
     /*public function dbOperations(){
@@ -58,11 +61,15 @@ class BookController extends Controller{
 
         session()->put('loan', $loan);
 
+        
+        
+
         return redirect()->back()->with('Sucesso', 'Livro Alugado!');
     }
 
-
+    /*
     public function remove(Request $request){
+        
         if($request-> id){
             $loan = session()->get('loan');
             if(isset($loan[$request->id])){
@@ -84,5 +91,5 @@ class BookController extends Controller{
 
             session()->flash('success', 'Cart updated successfully');
         }
-    }
+    }*/
 }

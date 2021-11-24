@@ -9,6 +9,10 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 
+/**
+ *  @mixin Builder
+ */
+
 class Loans extends Model
 {
     use HasApiTokens, HasFactory, Notifiable;
@@ -22,7 +26,6 @@ class Loans extends Model
         'id',
         'date_start',
         'date_end',
-        
     ];
 
     public function user (){

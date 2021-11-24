@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Book;
 use App\Models\Loan;
-use App\Models\Loans;
 use Illuminate\Support\Facades\DB;
 
 class LoansController extends Controller
@@ -23,8 +22,7 @@ class LoansController extends Controller
         
     }
     
-    public function __invoke(Request $request)
-    {
-        //
+    public function create(Request $request){
+        
     }
 }
