@@ -29,9 +29,33 @@
                 <li class="nav-item">
                   <a class="nav-link" href="/about">Sobre</a>
                 </li>
-                
               </ul>
             </div>
+            <div>
+              <div>   
+                  @if (Route::has('login'))
+                  <div  class="nav-item">
+                      @auth
+                          
+                          <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                              Logout
+                          </a>
+                          
+                          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                              {{ csrf_field() }}
+                              
+                          </form>
+                      @else
+                          <a href="{{ route('login') }}">Login</a>
+      
+                          @if (Route::has('register'))
+                              <a href="{{ route('register') }}">Registre-se</a>
+                          @endif
+                      @endif
+                  </div>
+              @endif
+              </div>
+          </div>
           </nav>
 
 
