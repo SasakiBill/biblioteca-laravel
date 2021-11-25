@@ -9,7 +9,8 @@ use Illuminate\Support\Facades\Route;
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/library', [BookController::class, 'dbOperations']);
 
-    Route::get('/loans', [LoansController::class, 'lbOperations'])->name('lbOperations');
+    Route::get('/loans', [LoansController::class, 'lbOperations'])
+    ->name('lbOperations');
 
     Route::get('/about', function(){
         return view('about');
@@ -24,10 +25,13 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/', function () {
         return view('main');
     });
+
+    Route::resource('users', \App\Http\Controllers\UserController::class)->except(['destroy']);
+
+    Route::get('users/{user}/destroy', [\App\Http\Controllers\UserController::class, 'destroy'])
+	->name('users.destroy');
     
 });
-
-Route::resource('/admin/users', UserController::class);
 
 require_once __DIR__ . '/fortify.php';
 Auth::routes();

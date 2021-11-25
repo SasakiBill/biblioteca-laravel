@@ -1,9 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
+
+use App\Http\Requests\RegisterRequest;
+use App\Http\Resources\UserResource;
+use App\Models\User;
 
 class UserController extends Controller
 {
@@ -14,7 +16,8 @@ class UserController extends Controller
      */
     public function index()
     {
-        
+        $users = UserResource::collection(User:all())->jsonSerialize();
+        return view('users.index', compact('users'));
     }
 
     /**
@@ -24,7 +27,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        return view('users.create');
     }
 
     /**
@@ -35,7 +38,10 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->validated();
+		User::query()->create($data);
+
+		return redirect()->route('users.index');
     }
 
     /**
@@ -46,7 +52,7 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('users.show', compact('users'));
     }
 
     /**
@@ -57,7 +63,7 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('users.edit', compact('users'));
     }
 
     /**
@@ -69,7 +75,10 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = $request->validated();
+		$user->update($data);
+
+		return redirect()->route('users.index');
     }
 
     /**
@@ -80,6 +89,11 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        try {
+			$user->delete();
+			return redirect()->route('users.index');
+		} catch (\Exception $e) {
+			return redirect()->route('users.index');
+		}
     }
 }

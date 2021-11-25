@@ -10,7 +10,7 @@
     </head>
     
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="z-index: 2;">
+        <nav class="navbar navbar-expand-md navbar-light bg-light mb-4" style="margin-left: -5vw;">
             <a class="navbar-brand" href="/">Biblio</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -34,28 +34,27 @@
             <div>
               <div>   
                   @if (Route::has('login'))
-                  <div  class="nav-item">
+                    <div  class="nav-item">
                       @auth
+                        <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                          Logout
+                        </a>
                           
-                          <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                              Logout
-                          </a>
-                          
-                          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                              {{ csrf_field() }}
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                          {{ csrf_field() }}
                               
-                          </form>
-                      @else
-                          <a href="{{ route('login') }}">Login</a>
+                        </form>
+                  @else
+                    <a href="{{ route('login') }}">Login</a>
       
-                          @if (Route::has('register'))
-                              <a href="{{ route('register') }}">Registre-se</a>
-                          @endif
-                      @endif
-                  </div>
+                    @if (Route::has('register'))
+                      <a href="{{ route('register') }}">Registre-se</a>
+                    @endif
+                  @endif
+              </div>
               @endif
               </div>
-          </div>
+            </div>
           </nav>
 
 

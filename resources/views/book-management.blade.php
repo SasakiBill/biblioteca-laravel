@@ -1,5 +1,4 @@
-@extends('layouts.topnavuser')
-@extends('layouts.footeruser')
+@extends('app'))
 
 <section class="section-init">
     

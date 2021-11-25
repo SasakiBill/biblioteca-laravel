@@ -22,13 +22,19 @@ class RegisterRequest extends FormRequest
      * @return array
      */
     public function rules()
-    {
-        return [
-            'name' => 'required|unique:users,username',
-            'email' => 'required|email:rfc,dns|unique:users,email',
-            'password' => 'required|min:8',
+	{
+		$rules = [
+			'name' => 'required|string|min:5|max:255',
+			'email' => 'required|string|unique:users,email',
             'phone' => 'required|unique:phone, user',
-            'password_confirmation' => 'required|same:password'
-        ];
-    }
+			'password' => 'required|string|confirmed'
+		];
+
+		if ($this->method() == 'PUT' && $user = $this->user) {
+			$rules['email'] .= ",$user->id";
+			$rules['password'] = 'nullable|string|confirmed';
+		}
+
+		return $rules;
+	}
 }

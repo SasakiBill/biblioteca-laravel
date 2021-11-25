@@ -1,8 +1,5 @@
 
-{{-- @extends('layouts.topnavuser') --}}
-@extends('layouts.bootstraptopnav')
-@extends('layouts.bootstrapfooter')
-{{-- @extends('layouts.footeruser') --}}
+@extends('app')
 
 <section class="section-init position-fixed align-top" style="margin-top: 4vw;" >
     <div class="container">
