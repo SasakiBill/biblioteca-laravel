@@ -1,13 +1,12 @@
 {{-- @extends('layouts.topnavuser') --}}
-@extends('layouts.bootstraptopnav')
-@extends('layouts.bootstrapfooter')
+@extends('app')
 {{-- @extends('layouts.footeruser') --}}
 
 @section('content')
     <div id="layoutSidenav_content">
         <main>
             <div class="container-fluid px-4">
-                <h1 class="mt-4">Vizualizar Usuário</h1>
+                <h1 class="mt-4">Visualizar Usuário</h1>
                 <ol class="breadcrumb mb-4">
                     <li class="breadcrumb-item">
                         <a href="/">Home</a>
@@ -15,7 +14,7 @@
                     <li class="breadcrumb-item">
                         <a href="/users">Usuários</a>
                     </li>
-                    <li class="breadcrumb-item active">Vizualizar Usuário</li>
+                    <li class="breadcrumb-item active">Visualizar Usuário</li>
                 </ol>
                 <div class="card mb-4">
                     <div class="card-body">

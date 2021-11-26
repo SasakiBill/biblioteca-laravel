@@ -3,6 +3,7 @@
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\LoansController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
 
@@ -26,11 +27,15 @@ Route::group(['middleware' => 'auth'], function () {
         return view('main');
     });
 
-    Route::resource('users', \App\Http\Controllers\UserController::class)->except(['destroy']);
+    Route::get('/welcome', function(){
+        return vieqw('welcome');
+    });
+
+    Route::resource('users', UserController::class)->except(['destroy']);
 
     Route::get('users/{user}/destroy', [\App\Http\Controllers\UserController::class, 'destroy'])
 	->name('users.destroy');
-    
+
 });
 
 require_once __DIR__ . '/fortify.php';

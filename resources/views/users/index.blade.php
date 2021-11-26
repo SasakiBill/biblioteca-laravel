@@ -1,6 +1,5 @@
 {{-- @extends('layouts.topnavuser') --}}
-@extends('layouts.bootstraptopnav')
-@extends('layouts.bootstrapfooter')
+@extends('app')
 {{-- @extends('layouts.footeruser') --}}
 
 @section('content')
@@ -16,24 +15,23 @@
                 </ol>
 
                 <div class="row">
-                    <div class="col-9">
-                        <input type="text" class="form-control" name="search" placeholder="Pesquisar ..."/>
-                    </div>
+
                     <div class="col-3">
                         <a href="{{ route('users.create') }}"
                            class="btn btn-dark btn-block text-white">
-                            Cadastrar
+                            Cadastrar Novo Usuário
                         </a>
                     </div>
 
-                    <div class="card mb-4 mt-5">
-                        <div class="card-body">
+                    <div class="card mb-4 mt-5  bg-transparent">
+                        <div class="card-body shadow-none">
                             <table class="table">
                                 <thead class="thead-dark bg-dark text-white">
                                 <tr>
-                                    <th scope="col">#ID</th>
+                                    <th scope="col">ID</th>
                                     <th scope="col">Nome</th>
                                     <th scope="col">Email</th>
+                                    <th scope="col">Telefone</th>
                                     <th scope="col">Criado em</th>
                                     <th scope="col">Editado em</th>
                                     <th scope="col" class="text-center">Ações</th>
@@ -45,6 +43,7 @@
                                         <th scope="row">{{ $user['id'] }}</th>
                                         <td>{{ $user['name'] }}</td>
                                         <td>{{ $user['email'] }}</td>
+                                        <td>{{ $user['phone'] }}</td>
                                         <td>{{ $user['created_at'] }}</td>
                                         <td>{{ $user['updated_at'] }}</td>
                                         <td class="text-center">
@@ -73,6 +72,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </main>
     </div>
 @endsection

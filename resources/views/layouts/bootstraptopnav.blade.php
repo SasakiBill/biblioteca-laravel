@@ -6,16 +6,16 @@
         <meta name="csrf-token" content="{{ csrf_token()}}">
         <title>{{ config ('APP_NAME', 'The Midnight Library')}}</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        
+
     </head>
-    
+
     <body>
-        <nav class="navbar navbar-expand-md navbar-light bg-light mb-4" style="margin-left: -5vw;">
+        <nav class="navbar navbar-expand-md navbar-light bg-light" style="width: auto">
             <a class="navbar-brand" href="/">Biblio</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse justify-content-end">
               <ul class="navbar-nav">
                 <li class="nav-item active">
                   <a class="nav-link" href="/">Página Inicial <span class="sr-only"></span></a>
@@ -32,21 +32,21 @@
               </ul>
             </div>
             <div>
-              <div>   
+              <div>
                   @if (Route::has('login'))
-                    <div  class="nav-item">
+                    <div class="nav-item">
                       @auth
                         <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                           Logout
                         </a>
-                          
+
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                           {{ csrf_field() }}
-                              
+
                         </form>
                   @else
                     <a href="{{ route('login') }}">Login</a>
-      
+
                     @if (Route::has('register'))
                       <a href="{{ route('register') }}">Registre-se</a>
                     @endif

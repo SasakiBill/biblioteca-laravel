@@ -1,6 +1,5 @@
 {{-- @extends('layouts.topnavuser') --}}
-@extends('layouts.bootstraptopnav')
-@extends('layouts.bootstrapfooter')
+@extends('app')
 {{-- @extends('layouts.footeruser') --}}
 
 @section('content')
