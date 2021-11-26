@@ -46,25 +46,7 @@
                                         <td>{{ $user['phone'] }}</td>
                                         <td>{{ $user['created_at'] }}</td>
                                         <td>{{ $user['updated_at'] }}</td>
-                                        <td class="text-center">
-                                            <a href="{{ $user['links']['show'] }}"
-                                               type="button"
-                                               class="btn btn-dark text-white">
-                                                Show
-                                            </a>
-
-                                            <a href="{{ $user['links']['edit'] }}"
-                                               type="button"
-                                               class="btn btn-warning text-white">
-                                                Edit
-                                            </a>
-
-                                            <a href="{{ $user['links']['destroy'] }}"
-                                               type="button"
-                                               class="btn btn-danger text-white">
-                                                Destroy
-                                            </a>
-                                        </td>
+                                        
                                     </tr>
                                 @endforeach
                                 </tbody>
